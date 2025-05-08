@@ -11,7 +11,7 @@ export default function AddDoctor() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('https://doctors-k9yr.onrender.com/add-doctor', {
+    const res = await fetch('http://localhost:5000/add-doctor', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form),
